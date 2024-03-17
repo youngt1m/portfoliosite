@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logotip.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <section class="banner">
+        <header>
+            <a href="" class="logo">Я <span>Кодер</span></a>
+            <div class="toggle"></div>
+        </header>
+        <!-- <img src="drip.jpg" class="girl">  -->
+        <div class="content">
+            <div class="contentBx">
+                <h4>Привет,</h4>
+                <h2>Я - <span>Кодер</span></h2>
+                <h3>№ 1 в СНГ</h3>
+                <p>
+                Описание</p>
+                <a href="">Кнопка 1</a>
+                <a href="">Кнопка 2</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href=""><img src="tg.png"></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="">Telegram</a></li>
+            <li><a href="">Инста</a></li>
+            <li><a href="">Заказать рекламу</a></li>
+            <li><a href="">Тик ток</a></li>
+            <li><a href="">Ютуб</a></li>
+        </ul>
+    </section>
+    <script>
+        let banner = document.querySelector('.banner');
+        let menutoggle = document.querySelector('.toggle');
+        menutoggle.onclick = function () {
+            menutoggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
